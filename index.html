@@ -139,18 +139,45 @@
     <div class="relative z-10 flex-grow">
         <!-- HEADER / NAVIGATION -->
         <header class="bg-memphis-yellow border-b-4 border-black p-4 md:p-6 mb-8">
-            <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-                                <div class="flex flex-wrap items-center gap-3">
-                    <div class="bg-memphis-pink text-white text-3xl font-black px-4 py-2 border-4 border-black transform -rotate-3 shadow-[4px_4px_0px_#000]">
-                        WEIHNACHTS
-                    </div>
-                    <div class="bg-memphis-cyan text-black text-3xl font-black px-4 py-2 border-4 border-black transform rotate-2 shadow-[4px_4px_0px_#000]">
-                        WUNDER
-                    </div>
-                    <div class="bg-memphis-lime text-black text-3xl font-black px-4 py-2 border-4 border-black transform -rotate-2 shadow-[4px_4px_0px_#000]">
-                        RESTPOSTEN
-                    </div>
-                </div>
+           <div class="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center gap-4">
+    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-2.5">
+        <div class="bg-memphis-pink text-white text-2xl md:text-3xl font-black px-3.5 py-2 border-4 border-black transform -rotate-3 shadow-[4px_4px_0px_#000]">
+            WEIHNACHTS
+        </div>
+        <div class="bg-memphis-cyan text-black text-2xl md:text-3xl font-black px-3.5 py-2 border-4 border-black transform rotate-2 shadow-[4px_4px_0px_#000]">
+            WUNDER
+        </div>
+        <div class="bg-memphis-lime text-black text-2xl md:text-3xl font-black px-3.5 py-2 border-4 border-black transform -rotate-2 shadow-[4px_4px_0px_#000]">
+            RESTPOSTEN
+        </div>
+    </div>
+
+    <p class="font-bold text-center text-xs md:text-sm bg-white px-3.5 py-2 border-2 border-black rounded-lg shadow-[3px_3px_0px_#000]">
+        ⚡ 24 STUNDEN UNTERRICHT // First Come, First Served (max. 5 Angebote) ⚡
+    </p>
+
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+    <div class="flex flex-wrap items-center justify-center sm:justify-start gap-2.5">
+        <div class="bg-memphis-pink text-white text-2xl md:text-3xl font-black px-3.5 py-2 border-4 border-black transform -rotate-3 shadow-[4px_4px_0px_#000]">
+            WEIHNACHTS
+        </div>
+        <div class="bg-memphis-cyan text-black text-2xl md:text-3xl font-black px-3.5 py-2 border-4 border-black transform rotate-2 shadow-[4px_4px_0px_#000]">
+            WUNDER
+        </div>
+        <div class="bg-memphis-lime text-black text-2xl md:text-3xl font-black px-3.5 py-2 border-4 border-black transform -rotate-2 shadow-[4px_4px_0px_#000]">
+            RESTPOSTEN
+        </div>
+    </div>
+
+    <div class="flex gap-3 shrink-0">
+        <button id="tab-user-btn" onclick="switchTab('user')" class="memphis-btn bg-memphis-pink text-white px-5 py-2 text-sm flex items-center gap-2">
+            <i class="fa-solid fa-pen-to-square"></i> Buchung
+        </button>
+        <button id="tab-admin-btn" onclick="requestAdminAccess()" class="memphis-btn bg-white text-black px-5 py-2 text-sm flex items-center gap-2">
+            <i class="fa-solid fa-lock"></i> Admin <span id="admin-badge" class="bg-memphis-yellow border border-black text-xs px-2 py-0.5 rounded-full font-bold">0</span>
+        </button>
+    </div>
+</div>
 
                 </div>
 <!-- <p class="font-bold text-center md:text-left text-sm md:text-base bg-white px-4 py-2 border-2 border-black rounded-lg shadow-[3px_3px_0px_#000]">
