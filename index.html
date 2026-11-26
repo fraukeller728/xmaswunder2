@@ -423,9 +423,8 @@
     </div>
 
     <script>
-        // HIER SPÄTER DIE NEUE SUPABASE-URL UND DEN ÖFFENTLICHEN KEY EINTRAGEN:
-        const SUPABASE_URL = 'https://DEIN-NEUES-PROJEKT.supabase.co';
-        const SUPABASE_ANON_KEY = 'DEIN-NEUER-PUBLIC-ANON-KEY';
+        const SUPABASE_URL = 'https://mswdwlkgzdyprngegjnh.supabase.co';
+        const SUPABASE_ANON_KEY = 'sb_publishable_WIzG7_xGs1orXmsCeo_Mdw_FJzqclNa';
 
         const MAX_CHOICES = 5;
         const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
@@ -515,7 +514,6 @@
                     });
                 }
 
-                // Falls ein aktuell gewähltes Angebot inzwischen 0 Plätze hat, abwählen
                 selectedChoices = selectedChoices.filter(id => {
                     const off = offers.find(o => o.id === id);
                     return off && off.seats > 0;
